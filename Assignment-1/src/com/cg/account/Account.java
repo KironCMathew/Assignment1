@@ -10,7 +10,7 @@ public class Account {
 	private String accountName;
 	private String address;
 	private double balance;
-	private long accountIdGen= 123000;
+	private static long accountIdGen= 123000;
 	
 	public Account() {
 		accountId = ++accountIdGen;
@@ -19,7 +19,7 @@ public class Account {
 
 	public Account(long accountId, String accountName, String address, double balance, long accountIdGen) {
 		super();
-		this.accountId = accountId;
+		//this.accountId = accountId;
 		this.accountName = accountName;
 		this.address = address;
 		this.balance = balance;
